@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
+gem 'pg', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -33,7 +34,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -43,3 +44,32 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#heroku gem
+gem 'rails_12factor', group: :production
+
+#add geolocation
+gem 'geocoder'
+
+#steers layout gem
+gem 'steer'
+
+#easy forms
+gem 'simple_form'
+
+#payment system
+gem 'stripe'
+
+#add file attachment
+gem 'paperclip'
+gem 'aws-sdk'
+
+#social logins
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-linkedin'
+
+#add admin centre/ cms
+gem 'activeadmin', github: 'gregbell/active_admin'
+12
