@@ -56,7 +56,7 @@ class RoomsController < ApplicationController
   private
   def room_params
   	#shortcut for whitelisting data form data
-  	params.require(:room).permit(:title, :address, :description, :max_guests, :bedrooms, :price)
+  	params.require(:room).permit(:title, :address, :description, :max_guests, :bedrooms, :price, :image)
   end
 
 
