@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
 
+	#associations
+	has_many :rooms
+
 	#built in for you
 	has_secure_password
 
